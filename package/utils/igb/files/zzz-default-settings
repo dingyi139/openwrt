@@ -23,6 +23,7 @@ uci set network.wgclient.public_key='HxIQxXtLKyBBWT2gMzGIPZBLmPK7spiXZ58k/0upviQ
 uci set network.wgclient.preshared_key='RpONxptGpHcj/Plfunl4gREeJ6W50UX28G5XQHJz0BA='
 uci set network.wgclient.route_allowed_ips='1'
 uci add_list network.wgclient.allowed_ips='192.168.100.2/32'
+uci set network.wgclient.description='iHome'
 uci commit network
 
 uci set dhcp.@dnsmasq[0].nonwildcard="0"
