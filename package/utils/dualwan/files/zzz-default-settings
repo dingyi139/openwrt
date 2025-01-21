@@ -37,9 +37,6 @@ uci add_list dhcp.@dnsmasq[0].notinterface='eth0'
 uci add_list dhcp.@dnsmasq[0].notinterface='eth1'
 uci commit dhcp
 
-uci set firewall.@zone[1].network='wan wan2'
-uci commit firewall
-
 sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/samba.lua
 
 sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release
