@@ -20,7 +20,7 @@ define Package/default-settings
   CATEGORY:=LuCI
   TITLE:=LuCI support for Default Settings
   PKGARCH:=all
-  DEPENDS:=
+  DEPENDS:=+luci-app-mwan3
 endef
 
 define Package/default-settings/description
